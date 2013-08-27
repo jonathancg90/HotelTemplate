@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 11]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <header>
+            <div id="logo"> <h1><img src="img/logo_cometa.png" alt="Logo del hotel"/></h1></div>
+            <div id="navigation">
+                <nav>
+                    <ul>
+                        <li><a>Inicio</a></li>
+                        <li><a>Costos</a></li>
+                        <li><a>Cuartos</a></li>
+                        <li><a>Contacto y reservaciones</a></li>
+                        <li><a>Buffet</a></li>
+                    </ul>   
+                </nav>  
+            </div>
+        </header>
+        <div class="slider_container fullScream">
+            <div class="slideContainer">
+                <div class="slide fullScream" data-background="img/DSCF0302"></div>
+                <div class="slide fullScream" data-background="img/DSCF0303"></div>
+                <div class="slide fullScream" data-background="img/DSCF0308"></div>
+                <div class="slide fullScream" data-background="img/DSCN1592"></div>
+            </div>
+        </div>
+        <section class="fullScream" id="index">
+            <div class="mensajePrincipal">
+                <p class="triangle"><span>Desde $300 la noche</span></p>
+                <h2>Un lugar para disfrutar y relajar</h2>
+                <p>Cancun mexico</p>
+            </div>
+        </section>
+        <nav class="slider_controls">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+        </nav>
+        <section id="cuartos" class="fullScream">
+            <h1 class="centerCircle callig">El mejor servicio</h1>
+            <div class="half halfRooms">
+                <img src="img/DSCF0037.jpg"/>
+            </div>
+            <div class="half halfRooms">
+                <img src="img/DSCN1127.jpg"/>
+            </div>
+        </section>
+
+        <script type="text/x-jquery-tmpl" id="precioTemplate">
+            <div>
+                <div class="ribbon"></div>
+                <h3>${paquete}</h3>
+                <p><strong>Contenido del paquete</strong></p>
+                <ol>
+                    {{each opciones}}
+                        <li>${opcion}</li>
+                    {{/each}}
+                </ol>
+                <p class="costo">${costo}</p>
+                <a id="regresar-ventana">Regresar</a>
+            </div>
+        </script>
+        <section id="costos" class="fullScream callig">
+            <div class="marginTop">
+                <div class="precio">
+                    <div class="ribbon"></div>
+                    <h3>paquete basico</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
+                    <p class="costo">$300</p>
+                    <p class="ver-mas" data-number="0">Conoce mas del paquete</p>
+                </div>
+                <div class="precio">
+                    <div class="ribbon"></div>
+                    <h3>paquete basico</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
+                    <p class="costo">$300</p>
+                    <p class="ver-mas" data-number="1">Conoce mas del paquete</p>
+                </div>
+                <div class="precio">
+                    <div class="ribbon"></div>
+                    <h3>paquete basico</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
+                    <p class="costo">$300</p>
+                    <p class="ver-mas" data-number="2">Conoce mas del paquete</p>
+                </div>
+            </div>
+        </section>
+        <section id="buffet" class="fullScream">
+            <div class="image_food viewport" data-background="img/DSCF0330"></div>
+            <div class="image_food" data-background="img/DSCN1218"></div>
+            <div class="image_food" data-background="img/DSCF0371"></div>
+            <div class="image_food" data-background="img/DSCF0371"></div>
+        </section>
+        <section id="contacto" class="fullScream">
+            <div class="marginTop callig">
+                <h1>Contacto</h1>
+                <div class="half">
+                    <h3>Redes Sociales</h3>
+                    <span class="social"><a href="http://facebook.com">F</a></span>
+                    <span class="social"><a href="http://twiter1.com">O</a></span>
+                    <span class="social"><a href="http://youtube.com">X</a></span>
+                    <h3>Direccion y telefono</h3>
+                    <p>Direccion inventada, avenida inventanada, numero inventado</p>
+                    <p>Telefono: 12412312</p>  
+                </div>
+                <div class="half">
+                    <div id="google_canvas">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&sensor=true">
+        <script src="js/plugins.js"></script>
+        <script src="js/jquery.flip.min.js"></script>
+        <script src="js/jquery.ui.core.min.js"></script>
+        <script src="js/jquery.ui.effect.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
